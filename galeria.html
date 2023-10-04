@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Galería - Mi Sitio Web</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        nav ul.nav {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul.nav li.nav-item {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul.nav li.nav-item a.nav-link {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="galeria.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Galería de Imágenes</h1>
+        <div class="gallery">
+            <img src="img/imagen1.jpg" alt="Imagen 1">
+            <img src="img/imagen2.jpg" alt="Imagen 2">
+            <img src="img/imagen4.jpg" alt="Imagen 3">
+            <!-- Agrega más imágenes aquí -->
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
+            <p>UBICACIÓN: Tuxtla Gutiérrez, Chiapas</p>
+            <p>CONTACTO: <a href="mailto:info@misitioweb.com">info@misitioweb.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
